@@ -1,0 +1,35 @@
+// জেলার আনুমানিক অবস্থান (lat/lng). মানচিত্র ও দূরত্বের হিসাবে ব্যবহৃত।
+export const DISTRICTS = [
+  { id: 'dhaka', bn: 'ঢাকা', en: 'Dhaka', lat: 23.81, lng: 90.41 },
+  { id: 'gazipur', bn: 'গাজীপুর', en: 'Gazipur', lat: 24.0, lng: 90.42 },
+  { id: 'narayanganj', bn: 'নারায়ণগঞ্জ', en: 'Narayanganj', lat: 23.63, lng: 90.5 },
+  { id: 'narsingdi', bn: 'নরসিংদী', en: 'Narsingdi', lat: 23.92, lng: 90.72 },
+  { id: 'mymensingh', bn: 'ময়মনসিংহ', en: 'Mymensingh', lat: 24.75, lng: 90.4 },
+  { id: 'jamalpur', bn: 'জামালপুর', en: 'Jamalpur', lat: 24.92, lng: 89.94 },
+  { id: 'tangail', bn: 'টাঙ্গাইল', en: 'Tangail', lat: 24.25, lng: 89.92 },
+  { id: 'faridpur', bn: 'ফরিদপুর', en: 'Faridpur', lat: 23.6, lng: 89.84 },
+  { id: 'rajshahi', bn: 'রাজশাহী', en: 'Rajshahi', lat: 24.37, lng: 88.6 },
+  { id: 'natore', bn: 'নাটোর', en: 'Natore', lat: 24.41, lng: 88.98 },
+  { id: 'pabna', bn: 'পাবনা', en: 'Pabna', lat: 24.0, lng: 89.23 },
+  { id: 'sirajganj', bn: 'সিরাজগঞ্জ', en: 'Sirajganj', lat: 24.45, lng: 89.7 },
+  { id: 'bogura', bn: 'বগুড়া', en: 'Bogura', lat: 24.85, lng: 89.37 },
+  { id: 'gaibandha', bn: 'গাইবান্ধা', en: 'Gaibandha', lat: 25.33, lng: 89.53 },
+  { id: 'rangpur', bn: 'রংপুর', en: 'Rangpur', lat: 25.75, lng: 89.25 },
+  { id: 'dinajpur', bn: 'দিনাজপুর', en: 'Dinajpur', lat: 25.63, lng: 88.63 },
+  { id: 'kushtia', bn: 'কুষ্টিয়া', en: 'Kushtia', lat: 23.9, lng: 89.12 },
+  { id: 'jashore', bn: 'যশোর', en: 'Jashore', lat: 23.17, lng: 89.21 },
+  { id: 'khulna', bn: 'খুলনা', en: 'Khulna', lat: 22.82, lng: 89.55 },
+  { id: 'bagerhat', bn: 'বাগেরহাট', en: 'Bagerhat', lat: 22.65, lng: 89.79 },
+  { id: 'satkhira', bn: 'সাতক্ষীরা', en: 'Satkhira', lat: 22.72, lng: 89.07 },
+  { id: 'barishal', bn: 'বরিশাল', en: 'Barishal', lat: 22.7, lng: 90.37 },
+  { id: 'bhola', bn: 'ভোলা', en: 'Bhola', lat: 22.69, lng: 90.65 },
+  { id: 'patuakhali', bn: 'পটুয়াখালী', en: 'Patuakhali', lat: 22.36, lng: 90.33 },
+  { id: 'cumilla', bn: 'কুমিল্লা', en: 'Cumilla', lat: 23.46, lng: 91.18 },
+  { id: 'noakhali', bn: 'নোয়াখালী', en: 'Noakhali', lat: 22.87, lng: 91.1 },
+  { id: 'chattogram', bn: 'চট্টগ্রাম', en: 'Chattogram', lat: 22.36, lng: 91.78 },
+  { id: 'coxsbazar', bn: 'কক্সবাজার', en: "Cox's Bazar", lat: 21.43, lng: 91.98 },
+  { id: 'sylhet', bn: 'সিলেট', en: 'Sylhet', lat: 24.9, lng: 91.87 },
+];
+
+const BY_ID = Object.fromEntries(DISTRICTS.map((d) => [d.id, d]));
+export const districtById = (id) => BY_ID[id];
